@@ -1,101 +1,312 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jingjing Hu's personal website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:800px)"
+      href="tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:530px)"
+      href="phone.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Jingjing Hu's personal website</title>
-</head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services </a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="Jingjing_Hu-modified.png"alt=""></td>
-      <td><h1>Jingjing Hu</h1>
-      <p><em>PMP, Web Development Learner</em></p>
-      <p>University of Texas at Austin</p>
-      <p><em>Master of Science in Computer Science</em></p>
-      </td>
-    </tr>
-  </table>
+    <section id="home">
+      <div class="main">
+        <h1 class="headings">
+          I AM <br />
+          JINGJING HU
+        </h1>
+        <button class="btn" onclick="window.location.href='#contact'">
+          Hire me
+        </button>
+      </div>
+    </section>
+    <h1 class="headings">ABOUT ME</h1>
+    <section id="about">
+      <div id="pic">
+        <img src="img6.jpg" alt="" />
+        <div id="intro">
+          <h2>JINGJING HU</h2>
+          <br />
+          <p>
+            <em
+              >I have both B.S. and M.S. Degrees in Electrical Engineering. I
+              found my passion for coding in 2022 and currently pursue my second
+              Master's Degree of Computer Science in the University of Texas at
+              Austin. I'm now profient in Python, HTML, CSS, JavaScript, React,
+              Node.js, MongoDB and more. Feel free to contact me anytime if
+              you're interested in me.</em
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <hr size="3">
-  <h3>Education</h3>
-  <ul>
+    <section id="portfolio">
+      <h1 class="headings">PORTFOLIO</h1>
+      <div class="gallery">
+        <div>
+          <a href="https://github.com/huhu-miao/react-e_commerce-pages"></a
+          ><img src="img1.jpg" alt="" />
+          <h3 class="prName">MERN-Stack E-commerce Web Application</h3>
+        </div>
+        <div>
+          <a href="https://github.com/huhu-miao/movie-search/tree/gh-pages"
+            ><img src="movie.jpg" alt=""
+          /></a>
+          <h3 class="prName">Movie Search Website</h3>
+        </div>
+
+        <div>
+          <a href="video.mp4"><img src="ice.png" alt="" /></a>
+          <h3 class="prName">SuperTuxKart Ice-hockey Tournament Game</h3>
+        </div>
+        <div>
+          <a href="https://github.com/huhu-miao/Python_Practices"
+            ><img src="tomato.png" alt=""
+          /></a>
+          <h3 class="prName">Python Projects</h3>
+        </div>
+        <div>
+          <a href="https://github.com/huhu-miao/Java"
+            ><img
+              src="https://miro.medium.com/max/640/1*is8mV6NuLh_Fk4uZdA3Uhg.gif"
+              alt=""
+          /></a>
+          <h3 class="prName">Java Projects</h3>
+        </div>
+        <div>
+          <a href="https://github.com/huhu-miao/JavaScript30"
+            ><img src="drum.jpg" alt=""
+          /></a>
+          <h3 class="prName">JavaScript Projects</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h1 class="headings">SERVICES</h1>
+      <div class="row">
+        <div class="box">
+          <img src="png2.png" alt="" />
+          <h1 class="headings">Website Design</h1>
+          <p>
+            Design a fully responsive website. 
+          </p>
+        </div>
+        <div class="box">
+          <img src="png3.png" alt="" />
+          <h1 class="headings">AI</h1>
+          <p>
+            Deep nutral network, image classification, image segmentation, AI control ...
+          </p>
+        </div>
+        <div class="box">
+          <img src="png1.png" alt="" />
+          <h1 class="headings">Games and Apps</h1>
+          <p>
+            Build a personal app to be more efficient or a small game to relax after hard work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="headings">CONTACT</h1>
+      <form action="" class="form">
+        <input
+          type="text"
+          name="name"
+          class="input"
+          placeholder="Enter Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="Enter Your Email"
+        />
+        <input
+          type="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Enter Your Message"
+        />
+        <input type="submit" value="SEND" id="send" />
+      </form>
+    <!-- </section>
     <table cellspacing="20">
       <tr>
-        <td>Zhejiang University</td>
-        <td>Master of Science in Electrical Engineering</td>
-        <td>Aug. 2011 - Mar. 2014</td>
-      </tr>
-      <tr>
-        <td>Zhejiang University</td>
-        <td>Bachelor of Science in Electrical Engineering</td>
-        <td>Sep. 2007 - Jun. 2011</td>
+        <td><img src="Jingjing_Hu-modified.png" alt="" /></td>
+        <td>
+          <h1>Jingjing Hu</h1>
+          <p><em>PMP, Web Development Learner</em></p>
+          <p>University of Texas at Austin</p>
+          <p><em>Master of Science in Computer Science</em></p>
+        </td>
       </tr>
     </table>
-  </ul>
-  <hr size="3">
-  <h3>Projects</h3>
-  <p><b>Python:</b></p>
-  <p><em>Snake Game</em>: The classic snake game. The snake grows longer when eat the
-    food and dies when hit the wall or collision with other parts of itself.
-    Automatically keep tracking of the highest score of all users.</p>
-  <p><em>Pong Game</em>: One of the first computer games. The ball keeps bouncing
-    between two paddles controlled by two players.If one player misses the ball, its opponent wins one point.</p>
-  <p><em>Turtle Crossing the Road</em>: The turtle controlled by the player tries
-    to cross a busy road of running cars. Once the turtle crosses the road successfully,
-     the player gets one point and enters to the next level where all the cars speed up a little bit.</p>
-  <p><em>U.S States Game</em>: A learning tool for all the people who love geography. The player enters
-     the name of the states in the U.S in the prompt window, it will show on the map if it does exist.
-      When the player want to exits the game, a csv file will be generated to show the
-       player what states he need to learn more.</p>
-  <p><em>Hirst Painting</em>: Replicate the work of the great artist Damien Hirst’s
-    spot painting. Extract colors from the original work of the artist and generate
-     random colorful spots on a 500 x 500 pixels screen.</p>
-  <p><b>Java:</b></p>
-  <p><em>BarCharterRacer</em>Produce animated bar charts showing any given data
-    changes over a period of time. The length of the bar shows the relevant data
-    number, which grows when the data grow and ranks dynamically with the highest on the top. </p>
-  <p><em>Huntington’s Disease Detecto</em>: Analyze a DNA string for Huntington’s
-     disease and produce a diagnosis. Read the genetic sequence from the file and
-     count the number of CAG repeats.</p>
-  <p><em>Kernel filter</em>: An image-processing program that applies various 
-    kernel filters to images, such as Gaussian blur, sharpen, Laplacian, emboss,
-    and motion blur. A kernel filter modifies the pixels in an image by replacing
-    each pixel with a linear combination of its neighboring pixels. </p>
-  <hr size="3">
-  <h3>Publications and Patents</h3>
-  <p>1 Jingjing Hu, Feifei Zhao, Weijia Liu, “State-of-the-art and prospect of
-    integrated energy system,” <em>International Electrical and Energy Conference</em>, 2017</p>
-  <p>2 Qiu Wang, Jingjing Hu, Chengchen Huang, et al., “An integrated MMC
-    module topology with DC fault ride through capability,” <em>Electrical & Energy Management Technology</em>, 2016</p>
-  <p>3 Qiu Wang, Hongwei Zhou, Jingjing Hu, et al., “H-bridge cascade-based
-    flexible cutting device for capacitor bank”, Chinese Patent, CN 105490286A, 2015</p>
-  <p>4 Jingjing Hu, Yibo Gao, Yuting Yan, et al., “DC side short-circuit fault analysis
-     of VSC,” <em>Journal of Mechanical & Electrical Engineering</em>, 2014</p>
-  <p>5 Jingjing Hu, Xidong Xu, Peng Qiu, et al., “A review of the protection methods
-    in DC distribution system,” <em>Power System Technology</em>, 2014</p>
-  <hr size="3">
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Python</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Java</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>HTML</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-  </table>
-  <hr size="3">
- 
-  <h3><a href="Contact information.html">Contact me</a></h3>
 
+    <hr size="3" />
+    <h3>Education</h3>
+    <ul>
+      <table cellspacing="20">
+        <tr>
+          <td>Zhejiang University</td>
+          <td>Master of Science in Electrical Engineering</td>
+          <td>Aug. 2011 - Mar. 2014</td>
+        </tr>
+        <tr>
+          <td>Zhejiang University</td>
+          <td>Bachelor of Science in Electrical Engineering</td>
+          <td>Sep. 2007 - Jun. 2011</td>
+        </tr>
+      </table>
+    </ul>
+    <hr size="3" />
+    <h3>Projects</h3>
+    <p><b>Python:</b></p>
+    <p>
+      <em>Snake Game</em>: The classic snake game. The snake grows longer when
+      eat the food and dies when hit the wall or collision with other parts of
+      itself. Automatically keep tracking of the highest score of all users.
+    </p>
+    <p>
+      <em>Pong Game</em>: One of the first computer games. The ball keeps
+      bouncing between two paddles controlled by two players.If one player
+      misses the ball, its opponent wins one point.
+    </p>
+    <p>
+      <em>Turtle Crossing the Road</em>: The turtle controlled by the player
+      tries to cross a busy road of running cars. Once the turtle crosses the
+      road successfully, the player gets one point and enters to the next level
+      where all the cars speed up a little bit.
+    </p>
+    <p>
+      <em>U.S States Game</em>: A learning tool for all the people who love
+      geography. The player enters the name of the states in the U.S in the
+      prompt window, it will show on the map if it does exist. When the player
+      want to exits the game, a csv file will be generated to show the player
+      what states he need to learn more.
+    </p>
+    <p>
+      <em>Hirst Painting</em>: Replicate the work of the great artist Damien
+      Hirst’s spot painting. Extract colors from the original work of the artist
+      and generate random colorful spots on a 500 x 500 pixels screen.
+    </p>
+    <p><b>Java:</b></p>
+    <p>
+      <em>BarCharterRacer</em>Produce animated bar charts showing any given data
+      changes over a period of time. The length of the bar shows the relevant
+      data number, which grows when the data grow and ranks dynamically with the
+      highest on the top.
+    </p>
+    <p>
+      <em>Huntington’s Disease Detecto</em>: Analyze a DNA string for
+      Huntington’s disease and produce a diagnosis. Read the genetic sequence
+      from the file and count the number of CAG repeats.
+    </p>
+    <p>
+      <em>Kernel filter</em>: An image-processing program that applies various 
+      kernel filters to images, such as Gaussian
+      blur, sharpen, Laplacian, emboss, and motion blur. A kernel
+      filter modifies the pixels in an image by replacing each pixel with a
+      linear combination of its neighboring pixels. 
+    </p>
+    <hr size="3" />
+    <h3>Publications and Patents</h3>
+    <p>
+      1 Jingjing Hu, Feifei Zhao, Weijia Liu, “State-of-the-art and prospect of
+      integrated energy system,”
+      <em>International Electrical and Energy Conference</em>, 2017
+    </p>
+    <p>
+      2 Qiu Wang, Jingjing Hu, Chengchen Huang, et al., “An integrated MMC
+      module topology with DC fault ride through capability,”
+      <em>Electrical & Energy Management Technology</em>, 2016
+    </p>
+    <p>
+      3 Qiu Wang, Hongwei Zhou, Jingjing Hu, et al., “H-bridge cascade-based
+      flexible cutting device for capacitor bank”, Chinese Patent, CN
+      105490286A, 2015
+    </p>
+    <p>
+      4 Jingjing Hu, Yibo Gao, Yuting Yan, et al., “DC side short-circuit fault
+      analysis of VSC,” <em>Journal of Mechanical & Electrical Engineering</em>,
+      2014
+    </p>
+    <p>
+      5 Jingjing Hu, Xidong Xu, Peng Qiu, et al., “A review of the protection
+      methods in DC distribution system,” <em>Power System Technology</em>, 2014
+    </p>
+    <hr size="3" />
+    <h3>Skills</h3>
+    <table cellspacing="10">
+      <tr>
+        <td>Python</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+    <hr size="3" />
 
-</body>
-
+    <h3><a href="Contact information.html">Contact me</a></h3> -->
+    <footer>
+      Image by
+      <a
+        href="https://www.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_13223496.htm#query=website%20background&position=7&from_view=keyword"
+        >Freepik</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/desktop"
+        title="desktop icons"
+        >Desktop icons created by Pixel perfect - Flaticon</a
+      >
+      Photo by
+      <a
+        href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Andrew Neel</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/cckf4TsHAuw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
+      Photo by
+      <a
+        href="https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Glenn Carstens-Peters</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/npxXWgQ33ZQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
+    </footer>
+  </body>
 </html>
